@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Survey Form</h1>
+            <article>Feel Free To Answer The Questions Below Based On Your Own Experience And Opinion. If You Are Not Convenient In Answering A Particular Question Please Skip It By Answering "No". Every Answer Would Be Very Appreciated. Thank You For Your Time.</article>
+        </header>
+        <main>
+            <form class="form" action="">
+                <section>
+                    <div class="form-group">
+                        <label class="title" for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required pattern="[A-Za-z]+" title="Name should contain only letters." placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label class="title" for="email">Your Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="user@user.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="title" for="phone">Your Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="Phone numbershould be 10 digits." placeholder="9999999999">
+                    </div>
+                    <div class="form-group">
+                        <label class="title" for="name">Where Do You Live?</label>
+                        <select name="" id="" >
+                            <option value="">select</option>
+                        </select>
+                    </div>
+                    <div class="radio-container form-group " id="age-container">
+                        <label class="title">Age</label>
+                        <div class="form-radio-type">
+                            <input type="radio" id="age1" name="age" value="15-20" required>
+                            <label for="age1">15-20</label>
+                        </div>
+                        <div class="form-radio-type">
+                            <input type="radio" id="age2" name="age" value="20-30" required>
+                            <label for="age2">20-30</label>
+                        </div>
+                        <div class="form-radio-type">
+                            <input type="radio" id="age3" name="age" value="31-40" required>
+                            <label for="age3">31-40</label>
+                        </div>
+                        <div class="form-radio-type">
+                            <input type="radio" id="age4" name="age" value="41-50" required>
+                            <label for="age4">41-50</label>
+                        </div>                  
+                        <div class="form-radio-type">
+                            <input type="radio" id="age5" name="age" value="Prefer not to say" required>
+                            <label for="age5">Prefer not to say</label>
+                        </div>               
+                        
+                    </div>
+                    <div class="radio-container form-group">
+                        <label class="title">How would you rate your proficiency in coding</label>
+                        <div class="form-radio-type">
+                            <input type="radio" id="proficiency1" name="proficiency" value="Beginner" required>
+                            <label for="proficiency1">Beginner</label>
+                        </div>
+                        <div class="form-radio-type">
+                            <input type="radio" id="proficiency2" name="proficiency" value="Intermediate" required>
+                            <label for="proficiency2">Intermediate</label>
+                        </div>
+                        <div class="form-radio-type">
+                            <input type="radio" id="proficiency3" name="proficiency" value="Advance" required>
+                            <label for="proficiency3">Advance</label>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="radio-container form-group">
+                        <label class="title">Have You Ever Appered in any coding contest?</label>
+                        <div class="form-radio-type">
+                            <input type="radio" id="contest1" name="contest" value="yes" required>
+                            <label for="contest1">Yes</label>
+                        </div>
+                        
+                        <div class="form-radio-type">
+                            <input type="radio" id="contest2" name="contest" value="no" required>
+                            <label for="contest2">No</label>
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <p class="title" for="passion">Discuss what drives your passion for coding and outline your aspirations in the field.</p>
+                        <textarea id="passion" name="passion" rows="3" required></textarea>                    
+                    </div>
+                    <div class="form-group">
+                        <p class="title" for="challenges">What are some of the challenges you face while coding?</p>
+                        <textarea id="challenges" name="challenges" rows="3" required></textarea>                    
+                    </div>
+                    <div class="form-group">
+                        <p class="title" for="dsa">Please list the Data Structures you have a strong understanding of.</p>
+                        <textarea id="dsa" name="dsa" rows="3" required></textarea>                    
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit">Submit Application</button>
+                    </div>
+                </section> 
+            </form>
+            
+
+        </main>
+    </div>
+    
+</body>
+</html>
